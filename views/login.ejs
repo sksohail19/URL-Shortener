@@ -76,7 +76,9 @@
         <a href="/signup">Don't have an account? Sign Up</a>
     </form>
 
-   
+    <% if (typeof error !== 'undefined' && error) { %>
+        <div class="error"><%= error %></div>
+    <% } %>
 
 </body>
 </html>
